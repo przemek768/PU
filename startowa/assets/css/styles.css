@@ -1,0 +1,20 @@
+.col-md-4.col-xl-4.color1 {
+  background-color: rgb(243,239,230);
+  color: black;
+}
+
+.col-md-4.col-xl-4.color1:hover {
+  background-color: #ED7D5D;
+  color: white;
+}
+
+.link_all_startowa {
+  text-decoration: none;
+  color: black;
+}
+
+.link_all_startowa:hover {
+  text-decoration: none;
+  color: white;
+}
+
