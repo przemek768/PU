@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            .l {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 40px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+          
+            -webkit-animation: animationLeft 5s linear infinite;
+            -moz-animation:    animationLeft 5s linear infinite; 
+            -o-animation:      animationLeft 5s linear infinite; 
+            animation:         animationLeft 5s linear infinite; 
+          }
+          
+          .r {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 40px;
+            position: absolute;
+            top: 150px;
+            left: 350px;
+          
+            -webkit-animation: animationRight 5s linear infinite;
+            -moz-animation:    animationRight 5s linear infinite;
+            -o-animation:      animationRight 5s linear infinite; 
+            animation:         animationRight 5s linear infinite; 
+          }
+          
+          @-webkit-keyframes animationLeft {
+            0%    { -webkit-transform: rotate(0deg) translateX(100px); }
+            50%   { -webkit-transform: rotate(360deg) translateX(100px); visibility: hidden; }
+            100%  { -webkit-transform: rotate(360deg) translateX(100px); visibility: hidden; }
+          }
+          
+          @-webkit-keyframes animationRight {
+            0%    { -webkit-transform: rotate(-180deg) translateX(100px); visibility: hidden; }
+            50%   { -webkit-transform: rotate(180deg) translateX(100px); visibility: hidden; }
+            100%  { -webkit-transform: rotate(-180deg) translateX(100px); }
+          }
+          
+          @-moz-keyframes animationLeft {
+            0%    { -moz-transform: rotate(0deg) translateX(100px); }
+            50%   { -moz-transform: rotate(360deg) translateX(100px); visibility: hidden; }
+            100%  { -moz-transform: rotate(360deg) translateX(100px); visibility: hidden; }
+          }
+          
+          @-moz-keyframes animationRight {
+            0%    { -moz-transform: rotate(-180deg) translateX(100px); visibility: hidden; }
+            50%   { -moz-transform: rotate(180deg) translateX(100px); visibility: hidden; }
+            100%  { -moz-transform: rotate(-180deg) translateX(100px); }
+          }
+          
+          @-o-keyframes animationLeft {
+            0%    { -o-transform: rotate(0deg) translateX(100px); }
+            50%   { -o-transform: rotate(360deg) translateX(100px); visibility: hidden; }
+            100%  { -o-transform: rotate(360deg) translateX(100px); visibility: hidden; }
+          }
+          
+          @-o-keyframes animationRight {
+            0%    { -o-transform: rotate(-180deg) translateX(100px); visibility: hidden; }
+            50%   { -o-transform: rotate(180deg) translateX(100px); visibility: hidden; }
+            100%  { -o-transform: rotate(-180deg) translateX(100px); }
+          }
+          
+          @keyframes animationLeft {
+            0%    { transform: rotate(0deg) translateX(100px); }
+            50%   { transform: rotate(360deg) translateX(100px); visibility: hidden; }
+            100%  { transform: rotate(360deg) translateX(100px); visibility: hidden; }
+          }
+          
+          @keyframes animationRight {
+            0%    { transform: rotate(-180deg) translateX(100px); visibility: hidden; }
+            50%   { transform: rotate(180deg) translateX(100px); visibility: hidden; }
+            100%  { transform: rotate(-180deg) translateX(100px); }
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="l"></div>
+        <div class="r"></div>
+    </body>
+</html>
